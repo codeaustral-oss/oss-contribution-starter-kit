@@ -1,5 +1,7 @@
 # OSS Contribution Starter Kit
 
+[![CI](https://github.com/codeaustral-oss/oss-contribution-starter-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/codeaustral-oss/oss-contribution-starter-kit/actions/workflows/ci.yml)
+
 A compact starter kit for preparing a small open-source contribution.
 
 This repo is intentionally process-focused. It helps a contributor gather context, verify scope, and write a maintainer-friendly pull request.

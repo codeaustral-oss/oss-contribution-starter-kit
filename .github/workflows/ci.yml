@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate starter kit
+        run: |
+          test -s README.md
+          test -s LICENSE
+          test -s .gitignore
+          test -s docs/preflight.md
+          test -s docs/review-response.md
+          test -s templates/issue-notes.md
+          test -s templates/pr.md
+          test -x scripts/check-worktree.sh
+          bash scripts/check-worktree.sh
